@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lunexa AI</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+	<aside class="sidebar" id="sidebar">
+		<div class="brand">
+			<div class="logo">L✦</div>
+			<div>
+				<h2>Lunexa AI</h2>
+				<span>Ask. Understand. Get Things Done.</span>
+			</div>
+		</div>
+		<button class="new-chat-btn" id="newChatBtn">＋ New Chat</button>
+		<nav>
+			<button class="nav-btn active" id="homeNav">⌂ Home</button>
+			<button class="nav-btn" id="assistantNav">✦ AI Assistant</button>
+			<button class="nav-btn" id="studyNav">🎓 Study</button>
+		</nav>
+		<div class="sidebar-bottom">
+			<div class="status">
+				<span class="status-dot" id="statusDot"></span>
+				<span id="backendStatus">Checking...</span>
+			</div>
+			<small>Lunexa AI V1</small>
+		</div>
+	</aside>
+
+	<main class="main">
+		<header class="mobile-header">
+			<button id="menuBtn">☰</button>
+			<strong>Lunexa AI</strong>
+		</header>
+
+		<section class="page active" id="homePage">
+			<div class="hero">
+				<div class="hero-badge">✦ Universal AI Assistant</div>
+				<h1>Your AI assistant<br>for <span>everything.</span></h1>
+				<p>Ask questions, study any subject, solve problems, code, write, plan your day, or just talk.</p>
+				<div class="home-input-box">
+					<textarea id="homeInput" placeholder="Ask Lunexa anything..." rows="1"></textarea>
+					<div class="input-actions">
+						<button class="voice-btn" id="homeVoiceBtn" title="Voice input">🎙</button>
+						<button class="send-btn" id="homeSendBtn">➤</button>
+					</div>
+				</div>
+				<div class="quick-grid">
+					<button class="quick-card" data-prompt="Explain this topic to me simply and step by step."><span>📚</span><strong>Explain a topic</strong><small>Learn anything clearly</small></button>
+					<button class="quick-card" data-prompt="Help me make an effective study plan for my studies."><span>🎓</span><strong>Study plan</strong><small>Plan your preparation</small></button>
+					<button class="quick-card" data-prompt="Quiz me on a topic and ask me questions one by one."><span>🧠</span><strong>Quiz me</strong><small>Practice and improve</small></button>
+					<button class="quick-card" data-prompt="Help me solve this question step by step."><span>✏️</span><strong>Solve a question</strong><small>Get step-by-step help</small></button>
+					<button class="quick-card" data-prompt="Help me with coding or debugging."><span>💻</span><strong>Coding</strong><small>Code and debugging</small></button>
+					<button class="quick-card" data-prompt="Help me with a daily-life problem."><span>🌱</span><strong>Daily life</strong><small>Practical guidance</small></button>
+				</div>
+			</div>
+		</section>
+
+		<section class="page" id="assistantPage">
+			<div class="chat-header">
+				<div><h2>✦ Lunexa AI</h2><p>Your universal AI assistant</p></div>
+				<button id="clearChatBtn">Clear</button>
+			</div>
+			<div class="messages" id="messages"></div>
+			<div class="chat-input-area">
+				<textarea id="chatInput" placeholder="Message Lunexa..." rows="1"></textarea>
+				<button id="voiceBtn" class="voice-btn" title="Voice input">🎙</button>
+				<button id="sendBtn" class="send-btn">➤</button>
+			</div>
+			<div class="typing" id="typing">Lunexa is thinking...</div>
+		</section>
+
+		<section class="page" id="studyPage">
+			<div class="study-header">
+				<div class="hero-badge">🎓 Study with Lunexa</div>
+				<h1>Study <span>anything.</span></h1>
+				<p>School, college, NEET, JEE, university or any course — Lunexa can help you understand and practice.</p>
+			</div>
+			<div class="study-grid">
+				<button class="study-card" data-prompt="Teach me a topic from my course in a simple step-by-step way."><span>📖</span><strong>Learn a topic</strong><small>Simple explanations</small></button>
+				<button class="study-card" data-prompt="Make important exam notes for this topic."><span>📝</span><strong>Make notes</strong><small>Important points</small></button>
+				<button class="study-card" data-prompt="Give me practice questions from this topic and check my answers."><span>🧠</span><strong>Practice</strong><small>Questions and answers</small></button>
+				<button class="study-card" data-prompt="Create a realistic study timetable for me."><span>📅</span><strong>Study timetable</strong><small>Plan your preparation</small></button>
+				<button class="study-card" data-prompt="Explain this difficult question step by step and show the reasoning."><span>🔬</span><strong>Problem solving</strong><small>Understand the solution</small></button>
+				<button class="study-card" data-prompt="Help me revise this chapter quickly before an exam."><span>⚡</span><strong>Quick revision</strong><small>Exam-focused revision</small></button>
+			</div>
+			<div class="study-cta">
+				<p>Have your own question?</p>
+				<button id="studyAskBtn">Ask Lunexa →</button>
+			</div>
+		</section>
+	</main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
